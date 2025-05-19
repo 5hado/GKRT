@@ -15,4 +15,10 @@ Rails.application.routes.draw do
   root to: redirect("/home")
 
   get "home", to: "pages#home", as: "home"
+
+  get "veko", to: "veko#about", as: "veko"
+  get "shadow", to: "shadow#about", as: "shadow"
+  get "chaos", to: "chaos#about", as: "chaos"
+  get "tz", to: "tz#about", as: "tz"
+  get "kuro", to: "kuro#about", as: "kuro"
 end
