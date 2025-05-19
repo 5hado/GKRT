@@ -1,1 +1,55 @@
-<h1>Welcome To the GRKT Officaial Webiste</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3 Wide Grid</title>
+<style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f2f2f2;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 20px;
+      background-color: white;
+      max-width: 1000px;
+      max-height: 600px;
+      overflow: auto;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+    }
+
+    .grid-item {
+      background-color: #e0e0e0;
+      text-align: center;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    .grid-item img {
+      max-width: 100%;     /* Limits image to grid item width */
+      max-height: 200px;   /* Optional: limits vertical size */
+      height: auto;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<h1>Welcome To the GRKT Official Webiste</h1>
+<body>
+  <div class="grid-container">
+    <div class="grid-item"><%= image_tag 'Shadow.jpg' %></div>
+    <div class="grid-item"><%= image_tag 'tz.jpg' %></div>
+    <div class="grid-item"><%= image_tag 'veko.JPG' %></div>
+    <div class="grid-item"><%= image_tag 'chaos.jpg' %></div>
+    <div class="grid-item"><%= image_tag 'tylan.jpg' %></div>
+    <div class="grid-item"></div>
+  </div>
+</body>
+</html>
