@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <title>3 Wide Grid</title>
 <style>
@@ -28,7 +29,6 @@
       
     }
 
-
     .grid-item img {
       max-width: 100%;     /* Limits image to grid item width */
       max-height: 200px;   /* Optional: limits vertical size */
@@ -39,8 +39,9 @@
 
     .centered-text {
       text-align: center;
-      padding: 5px;
       color: #F61115;
+      font-family: 'Metal Mania', cursive;
+      font-size: 75px;
     }
 
     .transparent-background {
@@ -50,10 +51,14 @@
     .role{
       float: left;
       margin-left: 20px;
+      padding-bottom: 25px;
+      height: 50px;
+      width: 50px;
     }
     .name{
       float: left;
-      bottom: 0;
+      bottom: -2;
+      font-family: 'Metal Mania', cursive;
     }
     
     .left{
@@ -61,8 +66,7 @@
     }
 
     .img{
-      height: auto;
-      width: auto;
+      height: 100%;
      float: right;
     }
   </style>
@@ -112,7 +116,7 @@
           <div class = "name">
           <%= image_tag("mid.svg", class: "role", alt: "Fill image") %>
           <h1>ChoasFusion</h1>
-          <h1>TWINK SOILDER</h1>
+          <h1>TWINK SOLDIER</h1>
           </div>
           <a href="/chaos">
           <%= image_tag("idkkk.PNG", class: "img", alt: "Fill image") %>
@@ -122,8 +126,8 @@
         <div class="grid-item"> 
           <div class = "name">
           <%= image_tag("jungle.svg", class: "role", alt: "Fill image") %>
-          <h1>Kuro</h1>
-          <h1>THE SAD ONE</h1>
+          <h1>KuroPlays</h1>
+          <h1>ANTI SOCIAL</h1>
           </div>
           <a href="/kuro">
           <%= image_tag("idk.PNG", class: "img", alt: "Fill image") %>
